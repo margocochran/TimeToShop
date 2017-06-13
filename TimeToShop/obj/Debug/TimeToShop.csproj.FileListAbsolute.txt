@@ -1,0 +1,6 @@
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\obj\Debug\TimeToShop.csprojResolveAssemblyReference.cache
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\bin\Debug\TimeToShop.exe.config
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\bin\Debug\TimeToShop.exe
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\bin\Debug\TimeToShop.pdb
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\obj\Debug\TimeToShop.exe
+C:\Users\lmcochran\Desktop\GitHub\TimeToShop\TimeToShop\obj\Debug\TimeToShop.pdb

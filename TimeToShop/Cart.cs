@@ -11,13 +11,27 @@ namespace TimeToShop
     /// </summary>
     class Cart
     {
+        private static int lastCustomerIdNumber = 0; 
+
         #region Properties
     
         public int CustomerIdNumber { get; private set; }
 
-        public int EmailAddress { get; set; }
+        public string CartName { get; set; }
+
+        public string EmailAddress { get; set; }
 
         public decimal BalanceOwed { get; private set; }
+        #endregion
+
+        #region Constructor
+
+        public Cart()
+        {
+            lastCustomerIdNumber ++;
+            CustomerIdNumber = lastCustomerIdNumber; 
+        }
+
         #endregion
 
         #region Methods
@@ -29,7 +43,6 @@ namespace TimeToShop
         {
             BalanceOwed -= itemPrice; 
         }
-        public void CheckOut(string itemName, decimal balanceOwed); //is this the correct place for this? Or should it be another class?
         #endregion
     }
 }

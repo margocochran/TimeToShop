@@ -10,6 +10,11 @@ namespace TimeToShop
     {
         static void Main(string[] args)
         {
+            var cart = new Cart();
+            cart.CartName = "My Birthday Shopping";
+            cart.EmailAddress = "test@test.com";
+            cart.AddItem("bat", 24);
+            Console.WriteLine($"CustomerIdNumber: {cart.CustomerIdNumber}, BalanceOwed: {cart.BalanceOwed}, EmailAddress: {cart.EmailAddress} ");
         }
     }
 }
