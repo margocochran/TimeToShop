@@ -10,11 +10,17 @@ namespace TimeToShop
     {
         static void Main(string[] args)
         {
-            var cart = new Cart();
-            cart.CartName = "My Birthday Shopping";
-            cart.EmailAddress = "test@test.com";
-            cart.AddItem("bat", 24);
-            Console.WriteLine($"CustomerIdNumber: {cart.CustomerIdNumber}, BalanceOwed: {cart.BalanceOwed}, EmailAddress: {cart.EmailAddress} ");
+            var cart = new Cart("My Birthday Shopping", "test@test.com");
+            //Does the item class need to be nested within the class Cart? 
+          
+
+            var cart2 = new Cart
+            {
+                EmailAddress = "test@test.com",
+
+            };
+
+            Console.WriteLine($"CustomerIdNumber: {cart2.CustomerIdNumber}, BalanceOwed: {cart2.BalanceOwed}, EmailAddress: {cart2.EmailAddress} ");
         }
     }
 }

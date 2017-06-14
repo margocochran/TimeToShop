@@ -32,17 +32,32 @@ namespace TimeToShop
             CustomerIdNumber = lastCustomerIdNumber; 
         }
 
+        public Cart(string cartName) : this()
+        {
+            CartName = cartName;
+        }
+
+        public Cart(string cartName, string emailAddress) : this(cartName)
+        {
+            EmailAddress = emailAddress;
+        }
+
+        /*public Cart(string cartName, string emailAddress, string item) : this(cartName, emailAddress)
+        {
+            AddItem(item); //Do I have to change the method so only one parameter passes through? */
+      
         #endregion
 
         #region Methods
-        public void AddItem(string itemName, decimal itemPrice)
+        /*public void AddItem(string itemName, decimal itemPrice)
         {
             BalanceOwed += itemPrice; 
         }
         public void DeleteItem(string itemName, decimal itemPrice)
         {
             BalanceOwed -= itemPrice; 
-        }
+        }*/
+        //Is this section needed? I keep getting errors and must be entering the wrong components of a method.
         #endregion
     }
 }
