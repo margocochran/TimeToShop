@@ -9,6 +9,13 @@ namespace TimeToShop
     /// <summary>
     /// This is a shopping cart that stores the customer's goods for purchase.
     /// </summary>
+    public enum DeliveryType
+    {
+        RegularShipping,
+        PriorityShipping,
+        PickUp
+    }
+
     class Cart
     {
         private static int lastCustomerIdNumber = 0; 
@@ -22,6 +29,9 @@ namespace TimeToShop
         public string EmailAddress { get; set; }
 
         public decimal BalanceOwed { get; private set; }
+
+        public DeliveryType DeliveryType { get; set; }
+        
         #endregion
 
         #region Constructor
