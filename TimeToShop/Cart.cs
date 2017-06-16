@@ -52,10 +52,10 @@ namespace TimeToShop
             EmailAddress = emailAddress;
         }
 
-        /*public Cart(string cartName, string emailAddress, string item) : this(cartName, emailAddress)
+        public Cart(string cartName, string emailAddress, DeliveryType deliveryType) : this(cartName, emailAddress)
         {
-            AddItem(item); //Do I have to change the method so only one parameter passes through? */
-      
+            DeliveryType = deliveryType; 
+        }
         #endregion
 
         #region Methods

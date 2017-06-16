@@ -21,10 +21,10 @@ namespace TimeToShop
         #region Constructor
 
         public Item()
-         {
+        {
             lastItemNumber++;
             ItemNumber = lastItemNumber;
-         }
+        } //can't figure out why this error is here. It persists even wtih a semi-colon
 
         #endregion
 

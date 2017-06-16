@@ -10,17 +10,29 @@ namespace TimeToShop
     {
         static void Main(string[] args)
         {
-            var cart = new Cart("My Birthday Shopping", "test@test.com");
-            //Does the item class need to be nested within the class Cart? 
-          
+            Console.WriteLine("*****Welcome to My Shop!*****");
+            Console.WriteLine("0. Exit");
+            Console.WriteLine("1. Shop for Items");
+            Console.WriteLine("2. Go to My Cart");
+            Console.WriteLine("3. Go to Checkout");
 
-            var cart2 = new Cart
+            var choice = Console.ReadLine(); 
+            switch (choice)
             {
-                EmailAddress = "test@test.com",
+                case "0":
+                    return; 
+                case "1":
+                case "2":
+                case "3":
+                default:
+                    break;
+            }
 
-            };
 
-            Console.WriteLine($"CustomerIdNumber: {cart2.CustomerIdNumber}, BalanceOwed: {cart2.BalanceOwed}, EmailAddress: {cart2.EmailAddress} ");
+            /*var cart = new Cart("My Birthday Shopping", "test@test.com", DeliveryType.PriorityShipping);
+            //Does the item class need to be nested within the class Cart? 
+
+            Console.WriteLine($"CustomerIdNumber: {cart.CustomerIdNumber}, BalanceOwed: {cart.BalanceOwed}, EmailAddress: {cart.EmailAddress}, DeliveryType: {cart.DeliveryType} "); */
         }
     }
 }
