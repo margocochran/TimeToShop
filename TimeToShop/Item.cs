@@ -16,15 +16,18 @@ namespace TimeToShop
         public string ItemName { get; private set; }
 
         public decimal ItemPrice { get; private set; }
+    }
+    
         #endregion
 
         #region Constructor
 
-        public Item()
+        /*public Item(string itemName)
         {
             lastItemNumber++;
             ItemNumber = lastItemNumber;
-        } //can't figure out why this error is here. It persists even wtih a semi-colon
+        };*/ //How can I incorporate this to the shop?
 
         #endregion
+}
 
